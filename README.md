@@ -1,3 +1,3 @@
 # roles-llm-agents
 
-![text2img](shema.jpg)
+![text2img](shema.png)

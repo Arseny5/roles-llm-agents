@@ -2,7 +2,9 @@
 
 [Persona-hub](https://arxiv.org/pdf/2406.20094v1) create diverse synthetic data by thematic roles, in one distribution (like hospital -> nurse -> patient). Therefore, I use clustering and dimensionality reduction (HDBSCAN and UMAP) to get a list of responses for a role in order to approximate the distribution of each role. Embeddings of texts are obtained using 2 approaches: BERT-based or TFiDF models.
 
-**TFiDF approach**
+**First approach on TfiDF embeddings**
+
+The Kullback-Leibler divergence between two probability distributions $`P`$ and $`Q`$ is defined as:
 
 ```math
 D_{KL}(P \parallel Q) = \sum_{i} P(i) \log \left( \frac{P(i)}{Q(i)} \right)
@@ -12,9 +14,9 @@ where:
 - $`P`$ and $`Q`$ are the probability distributions,
 - $`P(i)`$ and $`Q(i)`$ are the probability mass functions for the discrete case,
 
-**BERT approach**
+**Second approach on BERT embeddings**
 
-The KL divergence between two multivariate Gaussian distributions $`\mathcal{N}(\mu_1, \Sigma_1)`$ and $`\mathcal{N}(\mu_2, \Sigma_2)`$ is given by the following formula:
+Since BERT averages the embeddings by words, normal distributions are obtained. The KL divergence between two multivariate Gaussian distributions $`\mathcal{N}(\mu_1, \Sigma_1)`$ and $`\mathcal{N}(\mu_2, \Sigma_2)`$ is given by the following formula:
 
 ```math
 D_{KL}(\mathcal{N}(\mu_1, \Sigma_1) \parallel \mathcal{N}(\mu_2, \Sigma_2)) =

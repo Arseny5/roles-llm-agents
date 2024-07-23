@@ -10,9 +10,9 @@ D_{KL}(\mathcal{N}(\mu_1, \Sigma_1) \parallel \mathcal{N}(\mu_2, \Sigma_2)) =
 ```
 
 where:
-- \(\mu_1\) and \(\mu_2\) are the means of the distributions
-- \(\Sigma_1\) and \(\Sigma_2\) are the covariance matrices
-- \(k\) is the dimensionality of the distributions
+- $`\mu_1`$ and $`\mu_2`$ are the means of the distributions
+- $`\Sigma_1`$ and $`\Sigma_2`$ are the covariance matrices
+- $`k`$ is the dimensionality of the distributions
 
 
 

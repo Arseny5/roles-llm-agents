@@ -12,11 +12,8 @@ D_{KL}(P \parallel Q) = \sum_{i} P(i) \log \left( \frac{P(i)}{Q(i)} \right)
 ```
 
 where:
-\begin{itemize}
-    \item \( P \) and \( Q \) are the probability distributions,
-    \item \( P(i) \) and \( Q(i) \) are the probability mass functions for the discrete case,
-    \item \( p(x) \) and \( q(x) \) are the probability density functions for the continuous case.
-\end{itemize}
+- $`\P`$ and $`\Q`$ are the probability distributions,
+- $`\P(i)`$ and $`\Q(i)`$ are the probability mass functions for the discrete case,
 
 where:
 - $`\mu_1`$ and $`\mu_2`$ are the means of the distributions

@@ -2,7 +2,7 @@
 
 Calculation of KL divergence between LLM role groups.
 
-The KL divergence between two multivariate Gaussian distributions $`\(\mathcal{N}(\mu_1, \Sigma_1)\)`$ and $`\(\mathcal{N}(\mu_2, \Sigma_2)\)`$ is given by the following formula:
+The KL divergence between two multivariate Gaussian distributions $`\mathcal{N}(\mu_1, \Sigma_1)`$ and $`\mathcal{N}(\mu_2, \Sigma_2)`$ is given by the following formula:
 
 ```math
 D_{KL}(\mathcal{N}(\mu_1, \Sigma_1) \parallel \mathcal{N}(\mu_2, \Sigma_2)) =

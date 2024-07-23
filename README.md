@@ -4,7 +4,7 @@
 
 **First approach on TfiDF embeddings**
 
-The Kullback-Leibler divergence between two probability distributions $`P`$ and $`Q`$ is defined as:
+Creating word frequency distribution for each cluster and converting counts to probabilities. The Kullback-Leibler divergence between two probability distributions $`P`$ and $`Q`$ is defined as:
 
 ```math
 D_{KL}(P \parallel Q) = \sum_{i} P(i) \log \left( \frac{P(i)}{Q(i)} \right)

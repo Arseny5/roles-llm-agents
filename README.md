@@ -1,7 +1,5 @@
 # KL Divergence between Multivariate Gaussians of LLM roles
 
-Calculation of KL divergence between LLM role groups.
-
 Persona-hub has expanded the dataset by thematic roles, in one distribution (like hospital -> nurse -> patient). Therefore, I use clustering and dimensionality reduction to get a list of responses for a role in order to approximate the distribution of each role. Embeddings of texts are obtained using BERT-based or tfidf models. The KL divergence between two multivariate Gaussian distributions $`\mathcal{N}(\mu_1, \Sigma_1)`$ and $`\mathcal{N}(\mu_2, \Sigma_2)`$ is given by the following formula:
 
 ```math
